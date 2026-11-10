@@ -2,7 +2,7 @@
 
 % --- Packages ---
 \usepackage[left=0.48in, top=0.40in, right=0.48in, bottom=0.40in]{geometry}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage{tabularx}
@@ -52,81 +52,80 @@
     +1 (778) 513-1039
 \end{center}
 
+{\small Machine Learning Engineer with a PhD in Mechanical Engineering and experience in container-based model serving, C++ scientific simulation, and parallel computing with OpenMP and Open MPI. Built production ML pipelines and a hybrid CFD--MD solver; developed molecular simulation methods and graph neural networks for physical systems.}
+
 % --- Professional Experience Section ---
 \section{Professional Experience}
 \resumeEntryStart
 
   \resumeExperience
-    {\textbf{Machine Learning Engineer} $|$ AML AI Research \& Special Projects}{Scotiabank}{Toronto, ON}{Jul 2025 -- Present}
+    {\textbf{Machine Learning Engineer} / Data Scientist}{Scotiabank $|$ AML AI Research \& Special Projects}{Toronto, ON}{Jul 2025 -- Present}
     \begin{itemize}[noitemsep,topsep=2pt,parsep=1pt,partopsep=0pt, label={\textbullet}]
         \small
-        \item \textbf{Generative Modeling \& Anomaly Detection:} Refactored and optimized conditional generative anomaly detection models conditioned on KYC descriptors, isolating peer-group outlier behavior to suppress false positives in high-volume transaction streams.
-        \item \textbf{Foundational Representation Learning:} Built self-supervised sequence models on temporal transaction logs to produce dense client embeddings; established evaluation suites measuring semantic clustering against demographic and risk cohorts.
-        \item \textbf{ML Platform \& Synthetic Benchmarking:} Developed a custom Hyperparameter Optimization (HPO) tool to traverse parameter spaces and designed synthetic transactional benchmarks to unblock delayed-feedback validation loops.
-        \item \textbf{Agentic Alert Investigation Pipeline:} Contributed to an agentic narrative generation workflow for AML compliance; ingests multi-entity customer context (KYC profile, account records, transaction velocity, counterparty networks), enforces regulatory typology guardrails, and evaluates red-flag criteria to synthesize standardized case narratives.
-        \item \textbf{Automated Evidence Synthesis \& Delivery:} Engineered a batch orchestration loop that formats synthesized case narratives, customer behavioral profiles, and transactional evidence into structured workbooks for compliance investigator review and case resolution.
-
+        \item \textbf{Training \& Inference Optimization:} Refactored conditional generative anomaly detection pipelines for computational efficiency, maintainability, and numerical stability; integrated system-level profiling and performance logging, stabilized training loops, and evaluated loss functions and architecture variants.
+        \item \textbf{Experimentation \& Correctness:} Built custom hyperparameter optimization tooling, proxy evaluation metrics, and synthetic verification datasets to benchmark unsupervised models despite delayed investigation feedback.
+        \item \textbf{Representation Learning:} Built self-supervised sequence models on transaction histories and evaluation suites measuring embedding consistency against customer demographics and risk cohorts.
     \end{itemize}
 
   \resumeExperience
     {\textbf{Machine Learning Engineer}}{Zown}{Toronto, ON}{Feb 2024 -- Jul 2025}
     \begin{itemize}[noitemsep,topsep=2pt,parsep=1pt,partopsep=0pt, label={\textbullet}]
         \small
-        \item \textbf{Listing Recommendation Engine:} Architected a multi-stage candidate matching engine pairing deterministic constraint filtering with a Two-Tower neural retrieval network, integrating multi-task MLP heads predicting dwell time and interaction click-throughs.
-        \item \textbf{Multi-Party Conversational Agent (Offer Bot):} Contributed to an end-to-end agent in WhatsApp group chats orchestrating transactions among buyers, licensed agents, and AI; parsed listing IDs, triggered automated property valuation fallbacks, and dynamically retrieved disclosure documents from vendor databases.
-        \item \textbf{Tool Calling \& Document Automation:} Implemented programmatic tool-use workflows to map, extract, and populate standardized legal contracts (OREA Forms 100, 801, 320) via coordinate-based form-field APIs, integrating DocuSign eSignature to generate live execution envelopes in chat.
-        \item \textbf{Continuous Training \& Validation Guardrails:} Deployed tabular property valuation models with an automated Continuous Training (CT) pipeline and holdout validation gates to prevent production metric degradation.
-        \item \textbf{Multimodal Content Understanding:} In-housed listing photo understanding by fine-tuning Vision Transformers (Google ViT) with multi-task classification and regression heads to supply structured visual signals to downstream ranking models.
+        \item \textbf{End-to-End ML Systems:} Owned production ML pipelines; built a two-tower recommendation system with constraint filtering, behavioral feedback, micro-batch training, and automated holdout validation gates before model promotion.
+        \item \textbf{Container-Based Model Serving:} Deployed and served property valuation and recommendation models through containers; added continuous training to the property valuation pipeline.
+        \item \textbf{Production Inference \& Agent Tools:} Integrated a fine-tuned multi-task Vision Transformer into listing ingestion; implemented contract-population and DocuSign tool workflows for a WhatsApp agent.
     \end{itemize}
 
 \resumeEntryEnd
 
-% --- Education & Technical Skills Split Layout ---
-\begin{tabularx}{\textwidth}{@{}X@{\hspace{0.03\textwidth}}X@{}}
-\begin{minipage}[t]{\linewidth}
+% --- Scientific Research Section ---
+\section{Scientific Simulation \& Machine Learning Research}
+\resumeEntryStart
+  \resumeExperience
+    {\textbf{Doctoral Researcher} $|$ Mechanical Engineering}{York University}{Toronto, ON}{2021 -- 2025}
+    \begin{itemize}[noitemsep,topsep=2pt,parsep=1pt,partopsep=0pt, label={\textbullet}]
+        \small
+        \item \textbf{Molecular Dynamics \& Analysis:} Developed trajectory-analysis pipelines and spatio-temporal tracking of water-in-oil droplet coalescence, quantifying molecular aggregation, interfacial adsorption, and multiphase dynamics.
+        \item \textbf{Simulation Validation:} Developed a regression method for partial molar volumes from molecular dynamics trajectories; validated benchmark simulations against experiments, achieving 2.49\% mean relative deviation, reduced to 1.18\% with localized sampling.
+        \item \textbf{Scientific ML:} Fine-tuned equivariant graph neural networks on small density functional theory (DFT) datasets for adsorption energy and force prediction; evaluated layer freezing and data augmentation through ablation studies.
+    \end{itemize}
+
+  \resumeExperience
+    {\textbf{Master's Researcher} $|$ Mechanical Engineering}{Tehran Polytechnic}{Tehran, IR}{2018 -- 2021}
+    \begin{itemize}[noitemsep,topsep=2pt,parsep=1pt,partopsep=0pt, label={\textbullet}]
+        \small
+        \item \textbf{C++ Solver Development:} Built a hybrid computational fluid dynamics--molecular dynamics (CFD--MD) solver using OpenFOAM and ran coupled scientific simulations.
+        \item \textbf{Parallel Computing:} Implemented parallel simulation code using OpenMP and Open MPI, including domain decomposition to distribute the computational workload.
+    \end{itemize}
+\resumeEntryEnd
+
 % --- Education Section ---
 \section{Education}
-\resumeEntryStart
-  \resumeEducation
-    {York University}{Toronto, ON}
-    {PhD in Mechanical Engineering}{2021 -- 2025}
-    \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, label={\textbullet}]
-        \small
-        \item Equivariant Graph Neural Networks (eGNNs), domain adaptation, spatio-temporal tracking, and statistical regression modeling.
-    \end{itemize}
+{\small
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+\textbf{York University} --- PhD, Mechanical Engineering & 2021 -- 2025 \\
+\textbf{Tehran Polytechnic} --- MSc, Mechanical Engineering & 2018 -- 2021 \\
+\textbf{Sharif University of Technology} --- BSc, Mechanical Engineering & 2013 -- 2018
+\end{tabularx}
+}
 
-  \resumeEducation
-    {Tehran Polytechnic}{Tehran, IR}
-    {MSc in Mechanical Engineering}{2018 -- 2021}
-
-  \resumeEducation
-    {Sharif University of Technology}{Tehran, IR}
-    {BSc in Mechanical Engineering}{2013 -- 2018}
-\resumeEntryEnd
-\end{minipage}
-&
-\begin{minipage}[t]{\linewidth}
 % --- Skills Section ---
 \section{Technical Skills}
-\begin{itemize}[leftmargin=0.10in, label={}]
+\begin{itemize}[leftmargin=0pt, label={},noitemsep,topsep=2pt]
     \small
-    \item \textbf{AI Agents \& Workflows}: Multi-Step Agents, Tool Use \& API Integration, Guardrails \& Evaluation Suites
-    \item \textbf{ML \& Modeling}: Anomaly Detection, Two-Tower Recommenders, Representation Learning, GBDTs / Classification, GNNs, ViTs
-    \item \textbf{Frameworks \& Platforms}: PyTorch, PyTorch Geometric, Scikit-Learn, PySpark, Spark, SQL, Docker, GCP, Git
-    \item \textbf{Languages}: Python, SQL, Bash
+    \item \textbf{Systems \& Parallel Computing:} Docker, container-based model serving, OpenMP, Open MPI, GCP, Spark / PySpark
+    \item \textbf{Scientific Computing \& ML:} OpenFOAM, CFD--MD coupling, molecular dynamics, PyTorch, PyTorch Geometric
+    \item \textbf{Languages \& Tools:} C++, Python, SQL, Bash, Git; system profiling, automated validation, agent tool integration
 \end{itemize}
-\end{minipage}
-\end{tabularx}
 
 % --- Publications Section ---
-\section{Publications}
-\resumeEntryStart
-    \resumeExperience
-    {Graph Neural Networks for Sustainable Energy (HI Parashkooh, C Jian)}{Predicting Adsorption in Aromatic Molecules}{\href{https://www.mdpi.com/2305-7084/9/4/85}{ChemE 9 (4), 85}}{2025}
-    \resumeExperience
-    {An Innovative Method for Calculating PMV (HI Parashkooh, C Jian)}{from a standard molecular trajectory}{\href{https://www.sciencedirect.com/science/article/abs/pii/S0167732223026867}{J. Mol. Liq. 395, 123879}}{2024}
-    \resumeExperience
-    {Data Mining Guided Molecular Investigations (HI Parashkooh, C Jian)}{on the Coalescence of Water-in-Oil Droplets}{\href{https://pubs.acs.org/doi/abs/10.1021/acs.energyfuels.1c03358}{Energy Fuels 36 (4), 1811}}{2022}
-\resumeEntryEnd
+\section{Selected Publications}
+{\small HI Parashkooh, C Jian (all papers).
+\begin{itemize}[leftmargin=0pt, label={},noitemsep,topsep=2pt]
+    \item \href{https://www.mdpi.com/2305-7084/9/4/85}{Graph Neural Networks for Sustainable Energy: Predicting Adsorption in Aromatic Molecules}. \textit{ChemE}, 2025.
+    \item \href{https://www.sciencedirect.com/science/article/abs/pii/S0167732223026867}{An Innovative Method for Calculating PMV from a Standard Molecular Trajectory}. \textit{J. Mol. Liq.}, 2024.
+    \item \href{https://pubs.acs.org/doi/abs/10.1021/acs.energyfuels.1c03358}{Data Mining Guided Molecular Investigations on the Coalescence of Water-in-Oil Droplets}. \textit{Energy Fuels}, 2022.
+\end{itemize}
+}
 
 \end{document}
